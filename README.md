@@ -1,4 +1,4 @@
-An sparklyr extension for VariantSpark
+A sparklyr extension for VariantSpark
 ================
 
 VariantSpark is a framework based on scala and spark to analyze genome datasets. It is being developed by [CSIRO Bioinformatics](https://bioinformatics.csiro.au/) team in Australia. VariantSpark was tested on datasets with 3000 samples each one containing 80 million features in either unsupervised clustering approaches and supervised applications, like classification and regression.
