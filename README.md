@@ -1,6 +1,8 @@
 A sparklyr extension for VariantSpark
 ================
 
+<!-- badges: start --> [![Travis build status](https://travis-ci.org/samuelmacedo83/variantspark.svg?branch=master)](https://travis-ci.org/samuelmacedo83/variantspark) <!-- badges: end -->
+
 VariantSpark is a framework based on scala and spark to analyze genome datasets. It is being developed by [CSIRO Bioinformatics](https://bioinformatics.csiro.au/) team in Australia. VariantSpark was tested on datasets with 3000 samples each one containing 80 million features in either unsupervised clustering approaches and supervised applications, like classification and regression.
 
 The genome datasets are usually writing in Variant Call Format (VCF), a specific text file format used in bioinformatics for storing gene sequence variations. So, VariantSaprk is a great tool because it is able to read VCF files, run analyses and give us the output in a spark data frame.

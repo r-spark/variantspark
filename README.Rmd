@@ -1,5 +1,5 @@
 ---
-title: "An sparklyr extension for VariantSpark"
+title: "A sparklyr extension for VariantSpark"
 output:
   github_document:
     fig_width: 9
