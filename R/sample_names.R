@@ -12,8 +12,8 @@
 #' \dontrun{
 #' library(sparklyr)
 #' 
-#' sc <- spark_connect(master = "local", version = "2.2.0")
-#''vsc <- vs_connect(sc)
+#' sc <- spark_connect(master = "local")
+#' vsc <- vs_connect(sc)
 #' 
 #' hipster_vcf <- vs_read_vcf(vsc, "data/hipster.vcf.bz2")
 #' sample_names(hipster_vcf, 3)
