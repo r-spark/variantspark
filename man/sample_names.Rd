@@ -7,7 +7,7 @@
 sample_names(vcf_source, n_samples = NULL)
 }
 \arguments{
-\item{vcf_source}{An object with \code{VCFFeatureSource} class, usually the 
+\item{vcf_source}{An object with \code{VCFFeatureSource} class, usually the
 output of the \code{vs_read_vcf()}.}
 
 \item{n_samples}{The number os samples to display.}
@@ -17,4 +17,16 @@ spark_jobj, shell_jobj
 }
 \description{
 This function display the first N variant names.
+}
+\examples{
+\dontrun{
+library(sparklyr)
+
+sc <- spark_connect(master = "local")
+vsc <- vs_connect(sc)
+
+hipster_vcf <- vs_read_vcf(vsc, "data/hipster.vcf.bz2")
+sample_names(hipster_vcf, 3)
+}
+
 }

@@ -15,9 +15,9 @@ vs_read_vcf(vsc, path)
 spark_jobj, shell_jobj
 }
 \description{
-The Variant Call Format (VCF) specifies the format of a text file used in 
-bioinformatics for storing gene sequence variations. The format has been developed 
-with the advent of large-scale genotyping and DNA sequencing projects, such as 
+The Variant Call Format (VCF) specifies the format of a text file used in
+bioinformatics for storing gene sequence variations. The format has been developed
+with the advent of large-scale genotyping and DNA sequencing projects, such as
 the 1000 Genomes Project. The \code{vs_read_vcf()} reads this format and returns
 a \code{jobj} object from \code{VCFFeatureSource} scala class.
 }

@@ -17,7 +17,7 @@ vs_read_labels(vsc, path, label = "label")
 spark_jobj, shell_jobj
 }
 \description{
-This function reads only the label column of a CSV file and returns a \code{jobj} 
+This function reads only the label column of a CSV file and returns a \code{jobj}
 object from \code{CsvLabelSource} scala class.
 }
 \examples{
