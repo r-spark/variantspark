@@ -15,7 +15,7 @@ vs_read_csv(vsc, path)
 spark_jobj, shell_jobj
 }
 \description{
-The \code{vs_read_csv()} reads a CSV file format and returns a \code{jobj} 
+The \code{vs_read_csv()} reads a CSV file format and returns a \code{jobj}
 object from \code{CsvFeatureSource} scala class.
 }
 \examples{

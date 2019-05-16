@@ -13,15 +13,15 @@ vs_connect(sc)
 A variantspark connection
 }
 \description{
-You need to create a variantspark connection to use this extension. To do this, 
-you pass as argument a spark connection that you can create 
+You need to create a variantspark connection to use this extension. To do this,
+you pass as argument a spark connection that you can create
 using \code{sparklyr::spark_connect()}.
 }
 \examples{
-\dontrun(
+\dontrun{
 library(sparklyr)
 sc <- spark_connect(master = "local")
 vsc <- vs_connect(sc)
-)
+}
 
 }

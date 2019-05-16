@@ -9,10 +9,10 @@ vs_importance_analysis(vsc, vcf_source, labels, n_trees)
 \arguments{
 \item{vsc}{A variantspark connection.}
 
-\item{vcf_source}{An object with \code{VCFFeatureSource} class, usually the 
+\item{vcf_source}{An object with \code{VCFFeatureSource} class, usually the
 output of the \code{vs_read_vcf()}.}
 
-\item{labels}{An object with \code{CsvLabelSource}  class, usually the output 
+\item{labels}{An object with \code{CsvLabelSource}  class, usually the output
 of the \code{vs_read_labels()}.}
 
 \item{n_trees}{The number of trees using in the random forest.}
@@ -27,7 +27,7 @@ For more details, please look at
 }
 \examples{
 \dontrun{
-#' library(sparklyr)
+library(sparklyr)
 sc <- spark_connect(master = "local", version = "2.2.0")
 vsc <- vs_connect(sc)
 

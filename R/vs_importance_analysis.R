@@ -15,7 +15,7 @@
 #' 
 #' @examples 
 #' \dontrun{
-#' #' library(sparklyr)
+#' library(sparklyr)
 #' sc <- spark_connect(master = "local", version = "2.2.0")
 #' vsc <- vs_connect(sc)
 #' 

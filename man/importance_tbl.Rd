@@ -7,12 +7,12 @@
 importance_tbl(importance, name = "importance_tbl")
 }
 \arguments{
-\item{importance}{A jobj from the class \code{ImportanceAnalysis}, usually the 
+\item{importance}{A jobj from the class \code{ImportanceAnalysis}, usually the
 output of \code{vs_importance_analysis()}.}
 
 \item{name}{The name to assign to the copied table in Spark.}
 }
 \description{
-This function extracts the importance data frame from the Importance Analysis 
+This function extracts the importance data frame from the Importance Analysis
 jobj.
 }

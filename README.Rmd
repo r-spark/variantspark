@@ -6,10 +6,6 @@ output:
     fig_height: 5
 ---
 
-  <!-- badges: start -->
-  [![Travis build status](https://travis-ci.org/samuelmacedo83/variantspark.svg?branch=master)](https://travis-ci.org/samuelmacedo83/variantspark)
-  <!-- badges: end -->
-
  VariantSpark is a framework based on scala and spark to analyze genome datasets. It is
 being developed by [CSIRO Bioinformatics](https://bioinformatics.csiro.au/) team in Australia. VariantSpark was tested on datasets with 3000 samples each one containing 80 million features in either unsupervised clustering approaches and supervised applications, like classification and regression.
 
@@ -43,9 +39,9 @@ vsc <- vs_connect(sc)
   VariantSpark can load VCF files and other formats too, like CSV for example.
 
 ```{r}
-hipster_vcf <- vs_read_vcf(vsc, "data/hipster.vcf.bz2")
-hipster_labels <- vs_read_csv(vsc, "data/hipster_labels.txt")
-labels <- vs_read_labels(vsc, "data/hipster_labels.txt") # read just the label column
+hipster_vcf <- vs_read_vcf(vsc, "inst/extdata/hipster.vcf.bz2")
+hipster_labels <- vs_read_csv(vsc, "inst/extdata/hipster_labels.txt")
+labels <- vs_read_labels(vsc, "inst/extdata/hipster_labels.txt") # read just the label column
 ```
 
 ## Importance analysis
