@@ -5,7 +5,6 @@ test_that("importance_tbl", {
 
   sc <- sparklyr::spark_connect(master = "local")
   vsc <- vs_connect(sc)
-  browser()
   
   hipster_vcf <- vs_read_vcf(vsc, 
                              system.file("extdata/hipster.vcf.bz2",
