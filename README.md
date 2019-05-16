@@ -36,9 +36,9 @@ Load datasets
 VariantSpark can load VCF files and other formats too, like CSV for example.
 
 ``` r
-hipster_vcf <- vs_read_vcf(vsc, "data/hipster.vcf.bz2")
-hipster_labels <- vs_read_csv(vsc, "data/hipster_labels.txt")
-labels <- vs_read_labels(vsc, "data/hipster_labels.txt") # read just the label column
+hipster_vcf <- vs_read_vcf(vsc, "inst/extdata/hipster.vcf.bz2")
+hipster_labels <- vs_read_csv(vsc, "inst/extdata/hipster_labels.txt")
+labels <- vs_read_labels(vsc, "inst/extdata/hipster_labels.txt") # read just the label column
 ```
 
 Importance analysis
