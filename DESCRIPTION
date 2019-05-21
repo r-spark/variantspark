@@ -19,7 +19,7 @@ Description: This is a sparklyr extension integrating VariantSpark and R. Varian
 License: Apache License 2.0 | file LICENSE
 LazyData: true
 Imports: 
-    sparklyr
+    sparklyr (>= 1.0.1)
 RoxygenNote: 6.1.1
 Suggests: 
     testthat
