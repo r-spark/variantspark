@@ -25,7 +25,7 @@ library(sparklyr)
 sc <- spark_connect(master = "local")
 vsc <- vs_connect(sc)
 
-hipster_vcf <- vs_read_vcf(vsc, "data/hipster.vcf.bz2")
+hipster_vcf <- vs_read_vcf(vsc, "inst/extdata/hipster.vcf.bz2")
 sample_names(hipster_vcf, 3)
 }
 

@@ -29,7 +29,7 @@ library(sparklyr)
 sc <- spark_connect(master = "local")
 vsc <- vs_context(sc)
 
-hipster_vcf <- vs_read_vcf(vsc, "data/hipster.vcf.bz2")
+hipster_vcf <- vs_read_vcf(vsc, "inst/extdata/hipster.vcf.bz2")
 
 hipster_vcf
 

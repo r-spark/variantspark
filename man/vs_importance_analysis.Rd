@@ -28,11 +28,11 @@ For more details, please look at
 \examples{
 \dontrun{
 library(sparklyr)
-sc <- spark_connect(master = "local", version = "2.2.0")
+sc <- spark_connect(master = "local")
 vsc <- vs_connect(sc)
 
-hipster_vcf <- vs_read_vcf(vsc, "data/hipster.vcf.bz2")
-labels <- vs_read_labels(vsc, "data/hipster_labels.txt")
+hipster_vcf <- vs_read_vcf(vsc, "inst/extdata/hipster.vcf.bz2")
+labels <- vs_read_labels(vsc, "inst/extdata/hipster_labels.txt")
 
 vs_importance_analysis(vsc, hipster_vcf, labels, 10)
 }

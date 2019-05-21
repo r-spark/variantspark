@@ -16,7 +16,7 @@
 #' sc <- spark_connect(master = "local")
 #' vsc <- vs_context(sc)
 #' 
-#' labels <- vs_read_labels(vsc, "data/hipster_labels.txt")
+#' labels <- vs_read_labels(vsc, "inst/extdata/hipster_labels.txt")
 #' labels 
 #' }
 #' @export
