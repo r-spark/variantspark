@@ -3,16 +3,12 @@ library(testthat)
 library(variantspark)
 library(sparklyr)
 
+# for travis and devtools
 if (identical(Sys.getenv("NOT_CRAN"), "true")) {
-  # enforce all configuration settings are described
-  options(sparklyr.test.enforce.config = TRUE)
+  spark_ver <- Sys.getenv("SPARK_VERSION")
+  if(spark_ver != ""){
+    sparklyr::spark_install(version = spark_ver)
+  }
 }
 
-if (!grepl("WINDOWS", Sys.getenv("SystemRoot"))){
-  spark_install(version = "2.4.0")
-  spark_install(version = "2.3.2")
-  spark_install(version = "2.2.1")
-  test_check("variantspark")
-}
-
-
+test_check("variantspark")
