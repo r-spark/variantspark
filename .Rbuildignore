@@ -6,3 +6,4 @@
 ^README_images$
 ^derby\.log$
 ^logs$
+^cran-comments\.md$
