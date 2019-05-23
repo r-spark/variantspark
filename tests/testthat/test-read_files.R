@@ -1,15 +1,11 @@
 context("Read files")
 
-installed_versions <- nrow(sparklyr::spark_installed_versions())
-if (installed_versions != 0){
-  # create connection for the tests
-  sc <- sparklyr::spark_connect(master = "local")
-  vsc <- vs_connect(sc)
-}
-
 test_that("Read VCF", {
   skip_on_cran()
-  skip_if(installed_versions == 0)
+  skip_if(installed_versions() == 0)
+  
+  sc <- sparklyr::spark_connect(master = "local")
+  vsc <- vs_connect(sc)
   
   hipster_vcf <- vs_read_vcf(vsc, 
                              system.file("extdata/hipster.vcf.bz2",
@@ -22,7 +18,10 @@ test_that("Read VCF", {
 
 test_that("Read CSV", {
   skip_on_cran()
-  skip_if(installed_versions == 0)
+  skip_if(installed_versions() == 0)
+  
+  sc <- sparklyr::spark_connect(master = "local")
+  vsc <- vs_connect(sc)
 
   hipster_labels <- vs_read_csv(vsc, 
                                 system.file("extdata/hipster_labels.txt",
@@ -35,7 +34,10 @@ test_that("Read CSV", {
 
 test_that("Read labels", {
   skip_on_cran()
-  skip_if(installed_versions == 0)
+  skip_if(installed_versions() == 0)
+  
+  sc <- sparklyr::spark_connect(master = "local")
+  vsc <- vs_connect(sc)
 
   labels <- vs_read_labels(vsc, 
                            system.file("extdata/hipster_labels.txt",
