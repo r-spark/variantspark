@@ -1,6 +1,6 @@
 Package: variantspark
 Type: Package
-Title: A Sparklyr Extension For VariantSpark
+Title: A Sparklyr Extension for VariantSpark
 Version: 0.1.1
 Authors@R: c(
     person("Samuel", "Macêdo", email = "samuelmacedo@recife.ifpe.edu.br", 
