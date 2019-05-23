@@ -3,8 +3,9 @@ Type: Package
 Title: A Sparklyr Extension For VariantSpark
 Version: 0.1.1
 Authors@R: c(
-    person("Samuel", "Macêdo", 
-      email = "samuelmacedo@recife.ifpe.edu.br", role = c("aut", "cre"))
+    person("Samuel", "Macêdo", email = "samuelmacedo@recife.ifpe.edu.br", 
+           role = c("aut", "cre")),
+    person("Javier", "Luraschi", email = "javier@rstudio.com", role = "aut")
     )
 Maintainer: Samuel Macêdo <samuelmacedo@recife.ifpe.edu.br>
 Description: This is a sparklyr extension integrating VariantSpark and R. VariantSpark
