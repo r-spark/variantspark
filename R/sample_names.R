@@ -15,7 +15,10 @@
 #' sc <- spark_connect(master = "local")
 #' vsc <- vs_connect(sc)
 #' 
-#' hipster_vcf <- vs_read_vcf(vsc, "inst/extdata/hipster.vcf.bz2")
+#' hipster_vcf <- vs_read_vcf(vsc, 
+#'                            system.file("extdata/hipster.vcf.bz2",
+#'                                        package =  "variantspark"))
+#' 
 #' sample_names(hipster_vcf, 3)
 #' }
 #'

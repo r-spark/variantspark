@@ -29,10 +29,11 @@ library(sparklyr)
 sc <- spark_connect(master = "local")
 vsc <- vs_context(sc)
 
-hipster_vcf <- vs_read_vcf(vsc, "inst/extdata/hipster.vcf.bz2")
+hipster_vcf <- vs_read_vcf(vsc, 
+                           system.file("extdata/hipster.vcf.bz2",
+                                       package = "variantspark"))
 
-hipster_vcf
-
+hipster_vcf 
 }
 
 }

@@ -31,8 +31,13 @@ library(sparklyr)
 sc <- spark_connect(master = "local")
 vsc <- vs_connect(sc)
 
-hipster_vcf <- vs_read_vcf(vsc, "inst/extdata/hipster.vcf.bz2")
-labels <- vs_read_labels(vsc, "inst/extdata/hipster_labels.txt")
+hipster_vcf <- vs_read_vcf(vsc, 
+                           system.file("extdata/hipster.vcf.bz2",
+                                       package =  "variantspark"))
+
+labels <- vs_read_labels(vsc, 
+                         system.file("extdata/hipster_labels.txt",
+                                      package =  "variantspark"))
 
 vs_importance_analysis(vsc, hipster_vcf, labels, 10)
 }
