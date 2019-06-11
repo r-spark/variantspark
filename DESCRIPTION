@@ -1,6 +1,6 @@
 Package: variantspark
 Type: Package
-Title: A Sparklyr Extension for VariantSpark
+Title: A 'Sparklyr' Extension for 'VariantSpark'
 Version: 0.1.1
 Authors@R: c(
     person("Samuel", "Macêdo", email = "samuelmacedo@recife.ifpe.edu.br", 
@@ -8,15 +8,15 @@ Authors@R: c(
     person("Javier", "Luraschi", email = "javier@rstudio.com", role = "aut")
     )
 Maintainer: Samuel Macêdo <samuelmacedo@recife.ifpe.edu.br>
-Description: This is a sparklyr extension integrating VariantSpark and R. VariantSpark
-  is a framework based on scala and spark to analyze genome datasets, 
+Description: This is a 'sparklyr' extension integrating 'VariantSpark' and R. 'VariantSpark' is 
+  a framework based on 'scala' and 'spark' to analyze genome datasets, 
   see <https://bioinformatics.csiro.au/>. It was tested on datasets with 3000 samples 
   each one containing 80 million features in either unsupervised clustering approaches 
   and supervised applications, like classification and regression. The genome datasets
   are usually writing in VCF, a specific text file format used 
-  in bioinformatics for storing gene sequence variations. So, VariantSpark is a great 
+  in bioinformatics for storing gene sequence variations. So, 'VariantSpark' is a great 
   tool for genome research, because it is able to read VCF files, run analyses and return 
-  the output in a spark data frame.
+  the output in a 'spark' data frame.
 License: Apache License 2.0 | file LICENSE
 LazyData: true
 Imports: 
