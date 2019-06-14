@@ -3,8 +3,12 @@ library(testthat)
 library(variantspark)
 library(sparklyr)
 
-spark_install(version = "2.4.0")
-spark_install(version = "2.3.2")
-spark_install(version = "2.2.1")
+# for travis and devtools
+if (identical(Sys.getenv("NOT_CRAN"), "true")) {
+  spark_ver <- Sys.getenv("SPARK_VERSION")
+  if(spark_ver != ""){
+    sparklyr::spark_install(version = spark_ver)
+  }
+}
 
 test_check("variantspark")

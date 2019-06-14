@@ -18,10 +18,10 @@ you pass as argument a spark connection that you can create
 using \code{sparklyr::spark_connect()}.
 }
 \examples{
-\dontrun{
 library(sparklyr)
-sc <- spark_connect(master = "local")
+sc <- spark_connect(master = "spark://HOST:PORT")
+connection_is_open(sc)
 vsc <- vs_connect(sc)
-}
+spark_disconnect(sc)
 
 }

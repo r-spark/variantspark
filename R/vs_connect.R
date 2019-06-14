@@ -9,11 +9,11 @@
 #' @return A variantspark connection
 #' 
 #' @examples 
-#' \dontrun{
 #' library(sparklyr)
-#' sc <- spark_connect(master = "local")
+#' sc <- spark_connect(master = "spark://HOST:PORT")
+#' connection_is_open(sc)
 #' vsc <- vs_connect(sc)
-#' }
+#' spark_disconnect(sc)
 #'
 #' @export
 vs_connect <- function(sc){

@@ -14,7 +14,7 @@ To upgrade to the latest version of variantspark, run the following command and 
 
 ``` r
 install.packages("devtools")
-devtools::install_github("samuelmacedo83/variantspark")
+devtools::install_github("r-spark/variantspark")
 ```
 
 Connect to Spark and VariantSpark

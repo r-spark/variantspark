@@ -2,6 +2,7 @@ context("importance analysis")
 
 test_that("importance_tbl", {
   skip_on_cran()
+  skip_if(installed_versions() == 0)
 
   sc <- sparklyr::spark_connect(master = "local")
   vsc <- vs_connect(sc)

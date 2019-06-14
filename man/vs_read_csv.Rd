@@ -26,7 +26,9 @@ library(sparklyr)
 sc <- spark_connect(master = "local")
 vsc <- vs_context(sc)
 
-hipster_labels <- vs_read_csv(vsc, "data/hipster_labels.txt")
+hipster_labels <- vs_read_csv(vsc, 
+                              system.file("extdata/hipster_labels.txt",
+                                          package = "variantspark"))
 
 hipster_labels 
 }
